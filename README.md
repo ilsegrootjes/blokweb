@@ -36,15 +36,15 @@ responsive
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
-link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+https://dopper.com/nl 
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 hier de naam van de pagina  
-<img src="images/AfbeeldingEerstePagina.png" width="375px" alt="omschrijving van de pagina">
+<img src="images/homepaginafoto" width="375px" alt="omschrijving van de pagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 hier de naam van de pagina  
-<img src="images/AfbeeldingTweedePagina.png" width="375px" alt="omschrijving van de pagina">
+<img src="images/shoppaginafoto" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
