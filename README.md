@@ -58,7 +58,7 @@ hier de naam van de pagina
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de hele pagina: 
-<img src="images/Schermafbeelding 2021-09-16 om 14.07.03" width="375px" alt="breakdown van de hele pagina">
+<img src="images/breakdown1" width="375px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu): 
 <img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
