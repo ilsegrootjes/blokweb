@@ -60,9 +60,6 @@ hier de naam van de pagina
 ### de hele pagina: 
 <img src="images/breakdown1" width="375px" alt="breakdown van de hele pagina">
 
-### dynamisch deel (bijv menu): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
 </details>
 
 
@@ -75,26 +72,25 @@ hier de naam van de pagina
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik vind het moeilijk om te zien wanneer ik met flexbox of met positioneren moet werken. 
 
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+Ik wilde graag weten hoe ik mijn sections het beste kon stylen. Vooral bij de 2 sections die niet onder elkaar staan.
+<img src="images/moeilijkeSections" width="375px" alt="2 moeilijke sections">
+
+
 
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Ik weet nu hoe ik de sections moet stylen.
+- Ik weet hoe ik 'prettier' kan gebruiken
+- Ik moet beginnen met de header
+- De header staan in de body
 
 </details>
 
@@ -108,17 +104,13 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik vond het moeilijk om te bepalen hoe ik nu door moest gaan. Naar mijn idee zijn de dingen die ik nu nog moet doen veel ingewikkelder dan de dingen die ik nu gedaan heb. Dus ik had tijdens de les ff een opzetje nodig haha.
 
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+Ik heb deze week nog niet echt specifieke vragen. Misschien dat ik even wil kijken of de manier waar ik mijn headers neer zet.
 
 
 ### Verslag van meeting
