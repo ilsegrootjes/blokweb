@@ -58,7 +58,7 @@ hier de naam van de pagina
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de hele pagina: 
-<img src="images/breakdown1" width="375px" alt="breakdown van de hele pagina">
+<img src="../basiswebsite/images/breakdown1.png" width="375px" alt="breakdown van de hele pagina">
 
 </details>
 
@@ -79,7 +79,7 @@ Ik vind het moeilijk om te zien wanneer ik met flexbox of met positioneren moet 
 samen met je groepje opstellen
 
 Ik wilde graag weten hoe ik mijn sections het beste kon stylen. Vooral bij de 2 sections die niet onder elkaar staan.
-<img src="images/moeilijkeSections" width="375px" alt="2 moeilijke sections">
+<img src="../basiswebsite/images/moeilijkeSections.png" width="375px" alt="2 moeilijke sections"><>
 
 
 
