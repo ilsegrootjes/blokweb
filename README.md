@@ -60,6 +60,9 @@ hier de naam van de pagina
 ### de hele pagina: 
 <img src="../basiswebsite/images/breakdown1.png" width="375px" alt="breakdown van de hele pagina">
 
+<img src="images/breakdown1.png" width="375px" alt="omschrijving van de pagina">
+
+
 </details>
 
 
