@@ -109,7 +109,6 @@ Ik vond het moeilijk om te bepalen hoe ik nu door moest gaan. Naar mijn idee zij
 
 
 ### Agenda voor meeting
-samen met je groepje opstellen
 
 Ik heb deze week nog niet echt specifieke vragen. Misschien dat ik even wil kijken of de manier waar ik mijn headers neer zet.
 
@@ -117,10 +116,8 @@ Ik heb deze week nog niet echt specifieke vragen. Misschien dat ik even wil kijk
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Ik heb geleerd hoe ik een icoon in een button kan zetten.
+- Ik moet nog een keer de animatie oefeningen goed doornemen
 
 </details>
 
@@ -136,28 +133,14 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ### Bevindingen
 Lijst met je bevindingen die in de test naar voren kwamen:
 
-#### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Kleur
+De kleuren op het scherm zijn goed in contrast. Hier ben ik achter gekomen met de gele bril. Het enige wat er nog veranderd moet worden is de witte tekst op een gele achtergrond. Hierdoor is het beter te lezen
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+#### Titel Tekstgrootte. 
+De letters zijn door 2 brillen, en bij de concentratie test niet goed te lezen. Daarvoor zouden de p'tjes en ondertitels een stukje groter kunnen.
 
-
-#### Titel tweede bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel volgende bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel nog een bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+#### Buttons 
+De oplossing voor de moterieke test is lastig als je op een website veel content wilt plaatsen. Ik denk dat dat bij mij wel mee valt. De buttons kunnen misschien wat groter om de button beter te kunnen raten
 
 </details>
 
@@ -171,17 +154,15 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik ben best goed op weg. Ik moet alleen nog de buttons stylen, en iets animeren.
 
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+Wat kan ik animeren?
+Hoe werkt mn loop filmpje in de eerste section?
+Hoe kan ik een makkelijke versie maken van de buttons van de site?
 
 
 ### Verslag van meeting
