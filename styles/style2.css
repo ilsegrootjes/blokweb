@@ -53,6 +53,8 @@ section:nth-of-type(2) p, section:nth-of-type(2) h2, section:nth-of-type(2) h4{
 
 
 
+
+
 /*   DERDE SECTION   */
 
 section:nth-of-type(3){
@@ -63,6 +65,48 @@ section:nth-of-type(3){
   }
 
 
+/*   Deze button is weer wat breder 
+en dus wil ik er nog een andere styling aan geven  */
+/*   Algemeen bubbels grootste button  */
+section:nth-of-type(3) button::before {
+  content: "";
+  --size: 30px;
+  left: 125px;
+  top: 20px;
+}
+
+section:nth-of-type(3) button::after {
+  content: "";
+  --size: 20px;
+  left: 10px;
+  top: 40px;
+}
+
+/*   Shadows grootste button  */
+section:nth-of-type(3) button:hover::before {
+  animation: bubbels .6s ease-out;
+  box-shadow:  20px -5px 0px -2px var(--geleKleur), 40px 5px 0px -10px var(--geleKleur), -20px -10px 0px -10px var(--geleKleur);
+}
+
+section:nth-of-type(3) button:hover::after {
+  animation: bubbels1 .6s ease-out;
+  box-shadow: 20px -10px 0px 1px var(--geleKleur), 40px -10px 0px -4px var(--geleKleur), -10px -20px 0px -2px var(--geleKleur);
+}
+
+/*   Keyframes grootste buttons  */
+@keyframes bubbels1 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  60% {
+    transform: translate(-110%, 100%) scale(.7);
+  }
+
+  100% {
+    transform: translate(100%, -100%) scale(0.1);
+  }
+}
 
  
 
