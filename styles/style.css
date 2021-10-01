@@ -116,6 +116,7 @@ button p {
   padding: 0 5px 0 5px;
 }
 
+/*   Algemeen bubbels  */
 button::after,
 button::before {
   width: var(--size);
@@ -144,7 +145,7 @@ button:hover {
   transform: scale(1.1);
 }
 
-
+/*   Hhadows   */
 button:hover::before {
   animation: bubbels .6s ease-out;
   box-shadow:  20px -5px 0px -2px var(--geleKleur), 40px 5px 0px -10px var(--geleKleur), -20px -10px 0px -10px var(--geleKleur);
@@ -155,6 +156,7 @@ button:hover::after {
   box-shadow: 20px -10px 0px 1px var(--geleKleur), 40px -10px 0px -4px var(--geleKleur), -10px -20px 0px -2px var(--geleKleur);
 }
 
+/*   Keyframes   */
 @keyframes bubbels {
   0% {
     transform: translate(0, 0);
@@ -191,8 +193,11 @@ button:hover::after {
 
 
 
+/*   De grote buttons hebben andere bubbels met 
+andere posities en schaduwen   */
 /*   BUTTONS GROOT   */
 
+/*   Algemeen bubbels grote buttons   */
 .groteButton::before {
   content: "";
   --size: 30px;
@@ -212,6 +217,7 @@ button:hover::after {
 }
 
 
+/*   Shadows grote buttons   */
 .groteButton:hover::before {
   animation: bubbels .6s ease-out;
   box-shadow:  20px -5px 0px -2px var(--geleKleur), 40px 5px 0px -10px var(--geleKleur), -20px -10px 0px -10px var(--geleKleur);
@@ -282,6 +288,7 @@ footer{
   padding: 30px;
 }
 
+/*   Achtergrond is wit, dus er moet een andere tekstkleur komen   */
   footer h1 {
     color: var(--background-color3);
   }
@@ -320,7 +327,6 @@ footer{
     border: solid 4px;
     border-color:var(--background-color3);
 
-
     position:absolute;
     left:0;
     top:0;
@@ -336,7 +342,7 @@ footer{
     z-index: 1;
   }
 
-
+/*   Opmaak kopjes in het menu  */
  body form:first-of-type a {
     text-decoration: none;
     text-align: left;
@@ -352,7 +358,7 @@ footer{
   li {
     padding: 10px;
   }
-  
+ 
   .menu.menuOpen {
     transform:translateX(0%);
   }

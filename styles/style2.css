@@ -1,10 +1,9 @@
-/*   EERSTE SECTION   */
 section{
+  /*   Parent is nu alijd relative  */
   position: relative;
-  width: 100%;
-  margin: 0 auto;
 }
 
+/*   EERSTE SECTION   */
 
 section:first-of-type{
   display: flex;
@@ -18,8 +17,8 @@ video {
   height: 280px;
 }
 
+/*   Button moet goed gepositioneerd worden op de video  */
 .groteButton:first-of-type{
-  position: relative;
   left: -10px;
   top: -20px;
   padding: 0.5em;
@@ -30,7 +29,6 @@ video {
 
 
 /*   TWEEDE SECTION   */
-
     
 section:nth-of-type(2){
   background-color: var(--background-color2);
@@ -40,7 +38,8 @@ section:nth-of-type(2){
   margin-top: -40px;
   }
 
-section:nth-of-type(2) p, section:nth-of-type(2) h2{
+/*   Achtergrond kleur is licht, dus de tekst moet een andere kleur.  */
+section:nth-of-type(2) p, section:nth-of-type(2) h2, section:nth-of-type(2) h4{
   color: var(--background-color3);
   }
 
@@ -56,7 +55,6 @@ section:nth-of-type(2) p, section:nth-of-type(2) h2{
 
 /*   DERDE SECTION   */
 
-
 section:nth-of-type(3){
   background-color: var(--background-color3);
   display: flex;
@@ -64,11 +62,6 @@ section:nth-of-type(3){
   padding: 30px;
   }
 
-.klaarVoorDeStart {
-  color: var(--background-color3);
-  }
-
- 
 
 
  
@@ -106,10 +99,12 @@ section:nth-of-type(6){
   right: -20px;
   }
 
+/*   Lees meer  */
 section:nth-of-type(6) a{
   color: var(--main-color);
   }
 
+/*   Achtergrond kleur is donker, dus de tekst moet een andere kleur.  */
 section:nth-of-type(6) h2{
   color: var(--main-color);
   padding-left: 30px;
@@ -127,20 +122,29 @@ section:nth-of-type(7){
   padding: 30px;
   }
 
+/*   Achtergrond kleur is licht, dus de tekst moet een andere kleur.  */
 section:nth-of-type(7) p, section:nth-of-type(7) h1, section:nth-of-type(7) h4, section:nth-of-type(7) h3 {
   color: var(--background-color3);
 }
 
+/*   Er moet een duidelijke grens komen tussen de artiekelen  */
 section:nth-of-type(7) p{
   margin-bottom: 20px;
   margin-left: -25px;
   }
 
+/*   Er moet een duidelijke grens komen tussen de artiekelen  */
 section:nth-of-type(7) h4{
   margin-bottom: -20px;
   margin-top: 10px;
   margin-left: -25px;
   }
+
+/*   De button staat niet lekker met de border radius  */
+section:nth-of-type(7) button {
+  padding-left: 35px;
+  }
+    
 
 
 
@@ -157,11 +161,6 @@ section:nth-of-type(8){
   }
 
 
-.shopNu {
-    padding-left: 35px;
-}
-  
-  
 .filmpje{
   max-width: 30em;
   max-height: auto;
