@@ -168,30 +168,12 @@ Hoe kan ik een makkelijke versie maken van de buttons van de site?
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Ik heb met Zaid lang gewerkt aan mijn button
+- Ik weet hoe ik mn filmpje in de eerste section kan maken.
 
 </details>
 
 
-
-
-
-## Eindgesprek (week 5)
-
-<details>
-<summary>uitwerken voor eindgesprek</summary>
-
-### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-### Screenshot(s)
-
-hier screenshot(s) van je eindresultaat
-
-</details>
 
 
 
@@ -204,8 +186,10 @@ hier screenshot(s) van je eindresultaat
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
-3. ...
+1. https://flexboxfroggy.com/#nl 
+2. https://codepen.io/shooft/pen/zYzdMwO (animaties)
+3. https://codepen.io/shooft/pen/mdwroZE (humpty)
+4. https://www.w3schools.com/howto/howto_css_zoom_hover.asp 
+5. https://shop.dopper.com/nl_gl=1*gjfsj5*_ga*MTY5NzY5ODIyMC4xNjMxMDIyODE1*_ga_CCQ8WWERJQ*MTYzMjkyMDI1NC4xNi4xLjE2MzI5MjAyOTEuMjM. 
 
 </details>

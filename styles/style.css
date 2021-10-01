@@ -6,7 +6,6 @@
 html, body {
   margin: 0;
   padding: 0;
-  background-color: red;
 }
 
 img {
@@ -32,12 +31,124 @@ body {
 
 button {
   color: black;
+  border: none;
   background-color: var(--geleKleur);
   border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
-  border: none;
   margin: 0 auto 2em;
   padding: 1em;
+  position: relative;
+  width: var(--size);
+  height: var(--size);
+  cursor: pointer;
+  transition: .2s;
 }
+
+button::after,
+button::before {
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50% / 50% ;
+  background-color:var(--geleKleur);
+  position: absolute;
+  z-index: -1;
+}
+
+button::before {
+  content: "";
+  --size: 30px;
+  right: 30px;
+  top: 30px;
+}
+
+button::after {
+  content: "";
+  --size: 20px;
+  left: 10px;
+  top: 20px;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+
+button:hover::before {
+  animation: ilseVraag .6s ease-out;
+  box-shadow:  20px -5px 0px -2px var(--geleKleur), 40px 5px 0px -10px var(--geleKleur), -20px -10px 0px -10px var(--geleKleur);
+}
+
+button:hover::after {
+  animation: ilseVraag1 .6s ease-out;
+  box-shadow: 20px -10px 0px 1px var(--geleKleur), 40px -10px 0px -4px var(--geleKleur), -10px -20px 0px -2px var(--geleKleur);
+}
+
+@keyframes ilseVraag {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  60% {
+    transform: translate(150%, -150%) scale(.7);
+  }
+
+  100% {
+    transform: translate(100%, -100%) scale(0.1);
+  }
+}
+
+
+@keyframes ilseVraag1 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  60% {
+    transform: translate(-110%, 100%) scale(.7);
+  }
+
+  100% {
+    transform: translate(100%, -100%) scale(0.1);
+  }
+}
+
+
+
+
+
+.groteButton::before {
+  content: "";
+  --size: 30px;
+  left: 125px;
+  top: 20px;
+}
+
+.groteButton::after {
+  content: "";
+  --size: 20px;
+  left: 10px;
+  top: 50px;
+}
+
+.groteButton:hover {
+  transform: scale(1.1);
+}
+
+
+.groteButton:hover::before {
+  animation: ilseVraag .6s ease-out;
+  box-shadow:  20px -5px 0px -2px var(--geleKleur), 40px 5px 0px -10px var(--geleKleur), -20px -10px 0px -10px var(--geleKleur);
+}
+
+.groteButton:hover::after {
+  animation: ilseVraag1 .6s ease-out;
+  box-shadow: 20px -10px 0px 1px var(--geleKleur), 40px -10px 0px -4px var(--geleKleur), -10px -20px 0px -2px var(--geleKleur);
+}
+
+
+
+
+
+
 
 .groteButton{
   border-radius: 24px;
@@ -53,6 +164,10 @@ p {
   font-size: 4vw;
   color: var(--main-color);
   padding: 0em 2em 2em;
+}
+
+h2 {
+  color: var(--background-color3);
 }
 
 
@@ -87,7 +202,8 @@ header {
   left: 0;
   right: 0;
   top: 0;
-  z-index: 1;
+  z-index: 2;
+  max-width: 400px;
 }
 
 nav {
@@ -117,8 +233,11 @@ nav {
 
 
 
-
-
+footer{
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
 
   footer h1 {
     color: var(--background-color3);
@@ -154,27 +273,30 @@ nav {
 
 
   .menu {
-    background-color:var(--background-color3);
-    border: solid 8px;
-    border-color:var(--geleKleur);
+    background-color:var(--main-color);
+    border: solid 4px;
+    border-color:var(--background-color3);
 
 
     position:absolute;
-    height: 30em;
     left:0;
     top:0;
     bottom:0;
     width:calc(100% - 3em);
     max-width:25em;
     transform:translateX(-100%);
+    margin-top: 100px;
     
     transition:.5s;
+
+    position: fixed;
+    z-index: 1;
   }
 
 
  body form:first-of-type a {
     text-decoration: none;
-    color:var(--background-color1);
+    color:var(--background-color3);
     padding: 10px;
   }
 

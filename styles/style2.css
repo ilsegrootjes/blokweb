@@ -1,15 +1,30 @@
 section:first-of-type{
-    display: flex;
-    flex-direction: column;
-    }
+  display: flex;
+  flex-direction: column;
+  }
 
   
-  h1 {
-    font-size: 6vw;
-    color: var(--main-color);
-    text-align: center;
-    margin: 25px 100px 25px 100px;
-    }
+h1 {
+  font-size: 6vw;
+  color: var(--main-color);
+  text-align: center;
+  margin: 140px 100px 25px 80px;
+  position: relative;
+  }
+
+video {
+  position: absolute;
+  margin-top: 115px;
+  overflow: hidden;
+  height: 250px;
+}
+
+.groteButton:first-of-type{
+  position: relative;
+  left: -10px;
+  top: -20px;
+  padding: 0.5em;
+}
 
 
 
@@ -20,17 +35,18 @@ section:nth-of-type(2){
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-top: -40px;
   }
 
 section:nth-of-type(2) p, section:nth-of-type(2) h2{
-    color: var(--background-color3);
+  color: var(--background-color3);
   }
 
 .drieFlessen{
-    max-width: 22em;
-    max-height: auto;
-    padding: 2em;
-    margin-left: 4em;
+  max-width: 22em;
+  max-height: auto;
+  padding: 2em;
+  margin-left: 1.2em;
 }
 
 
@@ -46,8 +62,8 @@ section:nth-of-type(3){
   padding: 30px;
   }
 
-  .klaarVoorDeStart {
-    color: var(--background-color3);
+.klaarVoorDeStart {
+  color: var(--background-color3);
   }
 
  
@@ -89,6 +105,9 @@ section:nth-of-type(5){
   }
 
 
+
+
+
 section:nth-of-type(6){
   background-color: var(--background-color2);
   display: flex;
@@ -101,19 +120,25 @@ section:nth-of-type(6){
   }
 
 section:nth-of-type(6) a{
+  color: var(--main-color);
+  }
+
+  section:nth-of-type(6) h2{
     color: var(--main-color);
-}
+    padding-left: 30px;
+  }
+
 
 
 
 section:nth-of-type(7){
-    background-color: var(--background-color1);
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-    right: -20px;
-    bottom: 20px;
-    }
+  background-color: var(--background-color1);
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  right: -20px;
+  bottom: 20px;
+  }
 
 section:nth-of-type(7) p, section:nth-of-type(7) h1, section:nth-of-type(7) h4, section:nth-of-type(7) h3 {
   color: var(--background-color3);
@@ -122,15 +147,15 @@ section:nth-of-type(7) p, section:nth-of-type(7) h1, section:nth-of-type(7) h4, 
 
 
 section:nth-of-type(7) p{
-    margin-bottom: 20px;
-    margin-left: -25px;
-}
+  margin-bottom: 20px;
+  margin-left: -25px;
+  }
 
 section:nth-of-type(7) h4{
-    margin-bottom: -20px;
-    margin-top: 10px;
-    margin-left: -25px;
-}
+  margin-bottom: -20px;
+  margin-top: 10px;
+  margin-left: -25px;
+  }
 
 
 
@@ -181,7 +206,6 @@ section:nth-of-type(8){
   section:nth-of-type(9) h4{
     color: var(--background-color3)
   }*/
-
 
 
 .shopNu {
