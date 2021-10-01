@@ -1,0 +1,211 @@
+section{
+  /*   Parent is nu alijd relative  */
+  position: relative;
+}
+
+/*   EERSTE SECTION   */
+
+section:first-of-type{
+  display: flex;
+  flex-direction: column;
+  }
+
+  
+video {
+  position: absolute;
+  margin-top: 115px;
+  height: 280px;
+}
+
+/*   Button moet goed gepositioneerd worden op de video  */
+.groteButton:first-of-type{
+  left: -10px;
+  top: -20px;
+  padding: 0.5em;
+}
+
+
+
+
+
+/*   TWEEDE SECTION   */
+    
+section:nth-of-type(2){
+  background-color: var(--background-color2);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: -40px;
+  }
+
+/*   Achtergrond kleur is licht, dus de tekst moet een andere kleur.  */
+section:nth-of-type(2) p, section:nth-of-type(2) h2, section:nth-of-type(2) h4{
+  color: var(--background-color3);
+  }
+
+.drieFlessen{
+  max-width: 22em;
+  max-height: auto;
+  padding: 4em 2em 2em 2em;
+  margin-left: 1em;
+}
+
+
+
+
+
+
+/*   DERDE SECTION   */
+
+section:nth-of-type(3){
+  background-color: var(--background-color3);
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  }
+
+
+/*   Deze button is weer wat breder 
+en dus wil ik er nog een andere styling aan geven  */
+/*   Algemeen bubbels grootste button  */
+section:nth-of-type(3) button::before {
+  content: "";
+  --size: 30px;
+  left: 125px;
+  top: 20px;
+}
+
+section:nth-of-type(3) button::after {
+  content: "";
+  --size: 20px;
+  left: 10px;
+  top: 40px;
+}
+
+/*   Shadows grootste button  */
+section:nth-of-type(3) button:hover::before {
+  animation: bubbels .6s ease-out;
+  box-shadow:  20px -5px 0px -2px var(--geleKleur), 40px 5px 0px -10px var(--geleKleur), -20px -10px 0px -10px var(--geleKleur);
+}
+
+section:nth-of-type(3) button:hover::after {
+  animation: bubbels1 .6s ease-out;
+  box-shadow: 20px -10px 0px 1px var(--geleKleur), 40px -10px 0px -4px var(--geleKleur), -10px -20px 0px -2px var(--geleKleur);
+}
+
+/*   Keyframes grootste buttons  */
+@keyframes bubbels1 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  60% {
+    transform: translate(-110%, 100%) scale(.7);
+  }
+
+  100% {
+    transform: translate(100%, -100%) scale(0.1);
+  }
+}
+
+ 
+
+/*   VIERDE SECTION   */
+
+
+section:nth-of-type(4){
+  background-color: var(--background-color2a);
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  }
+  
+  
+
+/*   VIJFDE SECTION   */
+
+section:nth-of-type(5){
+  background-color: var(--background-color2);
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  left: -30px;
+  }
+
+
+/*   ZESDE SECTION   */
+
+section:nth-of-type(6){
+  background-color: var(--background-color2);
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  right: -20px;
+  }
+
+/*   Lees meer  */
+section:nth-of-type(6) a{
+  color: var(--main-color);
+  }
+
+/*   Achtergrond kleur is donker, dus de tekst moet een andere kleur.  */
+section:nth-of-type(6) h2{
+  color: var(--main-color);
+  padding-left: 30px;
+}
+
+
+
+
+/*   ZEVENDE SECTION   */
+
+section:nth-of-type(7){
+  background-color: var(--background-color1);
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  }
+
+/*   Achtergrond kleur is licht, dus de tekst moet een andere kleur.  */
+section:nth-of-type(7) p, section:nth-of-type(7) h1, section:nth-of-type(7) h4, section:nth-of-type(7) h3 {
+  color: var(--background-color3);
+}
+
+/*   Er moet een duidelijke grens komen tussen de artiekelen  */
+section:nth-of-type(7) p{
+  margin-bottom: 20px;
+  margin-left: -25px;
+  }
+
+/*   Er moet een duidelijke grens komen tussen de artiekelen  */
+section:nth-of-type(7) h4{
+  margin-bottom: -20px;
+  margin-top: 10px;
+  margin-left: -25px;
+  }
+
+/*   De button staat niet lekker met de border radius  */
+section:nth-of-type(7) button {
+  padding-left: 35px;
+  }
+    
+
+
+
+
+
+
+/*   ACHTSTE SECTION   */
+
+section:nth-of-type(8){
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  }
+
+
+.filmpje{
+  max-width: 30em;
+  max-height: auto;
+}

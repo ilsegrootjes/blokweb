@@ -1,0 +1,366 @@
+/* CSS Document */
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+main, footer, body, header{
+  overflow-x: hidden;
+}
+
+
+body {
+  font-family: 'Be Vietnam Pro' ;
+  width: 100%;
+}
+
+:root {
+  --main-color: white;
+  --background-color1:#f4fdff;
+  --background-color2:#9ad7dc;
+  --background-color2a:#aedede;
+  --background-color3:#2a4078;
+  --geleKleur: #ffeb81; 
+}
+
+
+
+
+
+
+/*   HEADER STYLING   */
+
+p {
+  color: var(--background-color3);
+  font-size: 4vw;
+  color: var(--main-color);
+  padding: 0em 2em 2em;
+}
+
+h1 {
+  font-size: 6vw;
+  color: var(--main-color);
+  text-align: center;
+  margin: 140px 100px 25px 80px;
+  position: relative;
+  }
+
+h2 {
+  color: var(--background-color3);
+}
+
+
+h4 {
+  font-size: 6vw;
+  color: var(--main-color);
+  padding: 1em 1.5em;
+}
+
+h6 {
+  font-size: 4vw;
+  color: var(--main-color);
+  padding: 0 2em;
+  margin: 0;
+}
+
+h3 {
+  font-size: 5vw;
+  color: var(--main-color);
+  padding: 0em 2em;
+  }
+
+
+
+
+
+/*   FOTOS   */
+
+img {
+  transition: transform .2s;
+}
+
+img:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+/*   BUTTONS KLEIN   */
+button {
+  color: black;
+  border: none;
+  background-color: var(--geleKleur);
+  border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+  margin: 0 auto 2em;
+  padding: 1em;
+  position: relative;
+  width: var(--size);
+  height: var(--size);
+  cursor: pointer;
+  transition: .2s;
+}
+
+.pijltje {
+  padding: 10px;
+}
+
+button p {
+  color: black;
+  padding: 0 5px 0 5px;
+}
+
+/*   Algemeen bubbels  */
+button::after,
+button::before {
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50% / 50% ;
+  background-color:var(--geleKleur);
+  position: absolute;
+  z-index: -1;
+}
+
+button::before {
+  content: "";
+  --size: 30px;
+  right: 40px;
+  top: 30px;
+}
+
+button::after {
+  content: "";
+  --size: 20px;
+  left: 10px;
+  top: 50px;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+/*   Shadows   */
+button:hover::before {
+  animation: bubbels .6s ease-out;
+  box-shadow:  20px -5px 0px -2px var(--geleKleur), 40px 5px 0px -10px var(--geleKleur), -20px -10px 0px -10px var(--geleKleur);
+}
+
+button:hover::after {
+  animation: bubbels1 .6s ease-out;
+  box-shadow: 20px -10px 0px 1px var(--geleKleur), 40px -10px 0px -4px var(--geleKleur), -10px -20px 0px -2px var(--geleKleur);
+}
+
+/*   Keyframes   */
+@keyframes bubbels {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  60% {
+    transform: translate(150%, -150%) scale(.7);
+  }
+
+  100% {
+    transform: translate(100%, -100%) scale(0.1);
+  }
+}
+
+
+@keyframes bubbels1 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  60% {
+    transform: translate(-110%, 100%) scale(.7);
+  }
+
+  100% {
+    transform: translate(100%, -100%) scale(0.1);
+  }
+}
+
+
+
+
+
+
+
+
+/*   De grote buttons hebben andere bubbels met 
+andere posities en schaduwen   */
+/*   BUTTONS GROOT   */
+
+/*   Algemeen bubbels grote buttons   */
+.groteButton::before {
+  content: "";
+  --size: 30px;
+  left: 100px;
+  top: 20px;
+}
+
+.groteButton::after {
+  content: "";
+  --size: 20px;
+  left: 10px;
+  top: 40px;
+}
+
+.groteButton:hover {
+  transform: scale(1.1);
+}
+
+
+/*   Shadows grote buttons   */
+.groteButton:hover::before {
+  animation: bubbels .6s ease-out;
+  box-shadow:  20px -5px 0px -2px var(--geleKleur), 40px 5px 0px -10px var(--geleKleur), -20px -10px 0px -10px var(--geleKleur);
+}
+
+.groteButton:hover::after {
+  animation: bubbels1 .6s ease-out;
+  box-shadow: 20px -10px 0px 1px var(--geleKleur), 40px -10px 0px -4px var(--geleKleur), -10px -20px 0px -2px var(--geleKleur);
+}
+
+.groteButton{
+  border-radius: 24px;
+}
+
+
+
+
+
+
+
+/*   HEADER STYLING   */
+
+
+header {
+  background-color: var(--background-color3);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav button {
+  margin: 1em 5em;
+}
+
+.logo{
+  height: 2em;
+  width: auto;
+  margin: 2em;
+}
+
+.menuIcoon {
+  background-color: var(--geleKleur);
+  border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+  border: none;
+  margin: 2em 0.5em 2em 0em;
+  padding: 2em;
+}
+
+
+
+
+
+
+
+/*   FOOTER STYLING   */
+
+footer{
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+/*   Achtergrond is wit, dus er moet een andere tekstkleur komen   */
+  footer h1 {
+    color: var(--background-color3);
+  }
+  
+  form {
+    display: flex;
+    justify-content: center;
+  }
+
+  form input{
+    border: solid 2px var(--background-color3);
+    border-radius: 5px;
+    padding: 0.5em;
+  }
+
+  ::placeholder {
+    color: var(--background-color3);
+    opacity: 1;
+  }
+
+  .submitKnop {
+    background-color: var(--background-color3);
+    color: var(--background-color1);
+    margin-left: 0.5em;
+  }
+
+
+
+
+
+/*   MENU STYLING   */
+
+
+  .menu {
+    background-color:var(--main-color);
+    border: solid 4px;
+    border-color:var(--background-color3);
+
+    position:absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    width:calc(100% - 3em);
+    max-width:25em;
+    transform:translateX(-100%);
+    margin-top: 100px;
+    
+    transition:.5s;
+
+    position: fixed;
+    z-index: 1;
+  }
+
+/*   Opmaak kopjes in het menu  */
+ body form:first-of-type a {
+    text-decoration: none;
+    text-align: left;
+    color:var(--background-color3);
+  }
+
+  ul {
+    padding: 1em 0 0 0;
+    list-style-type: none;
+    font-size: 1.5em;
+  }
+
+  li {
+    padding: 10px;
+  }
+ 
+  .menu.menuOpen {
+    transform:translateX(0%);
+  }
+
+  
