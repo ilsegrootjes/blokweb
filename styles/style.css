@@ -296,8 +296,8 @@ footer{
 
  body form:first-of-type a {
     text-decoration: none;
+    text-align: left;
     color:var(--background-color3);
-    padding: 10px;
   }
 
   ul {

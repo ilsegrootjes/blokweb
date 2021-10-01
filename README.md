@@ -22,7 +22,7 @@ Ilse Grootjes
 blauw
 
 #### Je focus:
-responsive
+Service plane
  
 </details>
 
