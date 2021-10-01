@@ -130,7 +130,7 @@ button::before {
 button::before {
   content: "";
   --size: 30px;
-  right: 35px;
+  right: 40px;
   top: 30px;
 }
 
@@ -145,7 +145,7 @@ button:hover {
   transform: scale(1.1);
 }
 
-/*   Hhadows   */
+/*   Shadows   */
 button:hover::before {
   animation: bubbels .6s ease-out;
   box-shadow:  20px -5px 0px -2px var(--geleKleur), 40px 5px 0px -10px var(--geleKleur), -20px -10px 0px -10px var(--geleKleur);
@@ -201,7 +201,7 @@ andere posities en schaduwen   */
 .groteButton::before {
   content: "";
   --size: 30px;
-  left: 125px;
+  left: 100px;
   top: 20px;
 }
 
