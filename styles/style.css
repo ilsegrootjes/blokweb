@@ -8,16 +8,14 @@ html, body {
   padding: 0;
 }
 
-img {
-  transition: transform .2s;
+main, footer, body, header{
+  overflow-x: hidden;
 }
 
-img:hover{
-    transform: scale(1.1);
-}
 
 body {
   font-family: 'Be Vietnam Pro' ;
+  width: 100%;
 }
 
 :root {
@@ -29,6 +27,72 @@ body {
   --geleKleur: #ffeb81; 
 }
 
+
+
+
+
+
+/*   HEADER STYLING   */
+
+p {
+  color: var(--background-color3);
+  font-size: 4vw;
+  color: var(--main-color);
+  padding: 0em 2em 2em;
+}
+
+h1 {
+  font-size: 6vw;
+  color: var(--main-color);
+  text-align: center;
+  margin: 140px 100px 25px 80px;
+  position: relative;
+  }
+
+h2 {
+  color: var(--background-color3);
+}
+
+
+h4 {
+  font-size: 6vw;
+  color: var(--main-color);
+  padding: 1em 1.5em;
+}
+
+h6 {
+  font-size: 4vw;
+  color: var(--main-color);
+  padding: 0 2em;
+  margin: 0;
+}
+
+h3 {
+  font-size: 5vw;
+  color: var(--main-color);
+  padding: 0em 2em;
+  }
+
+
+
+
+
+/*   FOTOS   */
+
+img {
+  transition: transform .2s;
+}
+
+img:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+/*   BUTTONS KLEIN   */
 button {
   color: black;
   border: none;
@@ -41,6 +105,15 @@ button {
   height: var(--size);
   cursor: pointer;
   transition: .2s;
+}
+
+.pijltje {
+  padding: 10px;
+}
+
+button p {
+  color: black;
+  padding: 0 5px 0 5px;
 }
 
 button::after,
@@ -56,7 +129,7 @@ button::before {
 button::before {
   content: "";
   --size: 30px;
-  right: 30px;
+  right: 35px;
   top: 30px;
 }
 
@@ -64,7 +137,7 @@ button::after {
   content: "";
   --size: 20px;
   left: 10px;
-  top: 20px;
+  top: 50px;
 }
 
 button:hover {
@@ -73,16 +146,16 @@ button:hover {
 
 
 button:hover::before {
-  animation: ilseVraag .6s ease-out;
+  animation: bubbels .6s ease-out;
   box-shadow:  20px -5px 0px -2px var(--geleKleur), 40px 5px 0px -10px var(--geleKleur), -20px -10px 0px -10px var(--geleKleur);
 }
 
 button:hover::after {
-  animation: ilseVraag1 .6s ease-out;
+  animation: bubbels1 .6s ease-out;
   box-shadow: 20px -10px 0px 1px var(--geleKleur), 40px -10px 0px -4px var(--geleKleur), -10px -20px 0px -2px var(--geleKleur);
 }
 
-@keyframes ilseVraag {
+@keyframes bubbels {
   0% {
     transform: translate(0, 0);
   }
@@ -97,7 +170,7 @@ button:hover::after {
 }
 
 
-@keyframes ilseVraag1 {
+@keyframes bubbels1 {
   0% {
     transform: translate(0, 0);
   }
@@ -115,6 +188,11 @@ button:hover::after {
 
 
 
+
+
+
+/*   BUTTONS GROOT   */
+
 .groteButton::before {
   content: "";
   --size: 30px;
@@ -126,7 +204,7 @@ button:hover::after {
   content: "";
   --size: 20px;
   left: 10px;
-  top: 50px;
+  top: 40px;
 }
 
 .groteButton:hover {
@@ -135,65 +213,26 @@ button:hover::after {
 
 
 .groteButton:hover::before {
-  animation: ilseVraag .6s ease-out;
+  animation: bubbels .6s ease-out;
   box-shadow:  20px -5px 0px -2px var(--geleKleur), 40px 5px 0px -10px var(--geleKleur), -20px -10px 0px -10px var(--geleKleur);
 }
 
 .groteButton:hover::after {
-  animation: ilseVraag1 .6s ease-out;
+  animation: bubbels1 .6s ease-out;
   box-shadow: 20px -10px 0px 1px var(--geleKleur), 40px -10px 0px -4px var(--geleKleur), -10px -20px 0px -2px var(--geleKleur);
 }
-
-
-
-
-
-
 
 .groteButton{
   border-radius: 24px;
 }
 
-button p {
-  color: black;
-  padding: 0 5px 0 5px;
-}
-
-p {
-  color: var(--background-color3);
-  font-size: 4vw;
-  color: var(--main-color);
-  padding: 0em 2em 2em;
-}
-
-h2 {
-  color: var(--background-color3);
-}
-
-
-h4 {
-  font-size: 6vw;
-  color: var(--main-color);
-  padding: 0em 1.5em;
-}
-
-h6 {
-  font-size: 4vw;
-  color: var(--main-color);
-  padding: 0 2em;
-  margin: 0;
-}
-
-h3 {
-  font-size: 5vw;
-  color: var(--main-color);
-  padding: 0em 2em;
-
-}
 
 
 
 
+
+
+/*   HEADER STYLING   */
 
 
 header {
@@ -203,12 +242,16 @@ header {
   right: 0;
   top: 0;
   z-index: 2;
-  max-width: 400px;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+nav button {
+  margin: 1em 5em;
 }
 
 .logo{
@@ -222,7 +265,7 @@ nav {
   border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
   border: none;
   margin: 2em 0.5em 2em 0em;
-  padding: 1.5em;
+  padding: 2em;
 }
 
 
@@ -231,7 +274,7 @@ nav {
 
 
 
-
+/*   FOOTER STYLING   */
 
 footer{
   display: flex;
@@ -269,7 +312,7 @@ footer{
 
 
 
-
+/*   MENU STYLING   */
 
 
   .menu {
@@ -309,8 +352,6 @@ footer{
   li {
     padding: 10px;
   }
-
-
   
   .menu.menuOpen {
     transform:translateX(0%);

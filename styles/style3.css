@@ -3,23 +3,6 @@
   box-sizing:border-box;  
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: 'Be Vietnam Pro' ;
-}
-
-:root {
-  --main-color: white;
-  --background-color1:#f4fdff;
-  --background-color2:#9ad7dc;
-  --background-color2a:#aedede;
-  --background-color3:#2a4078;
-  --geleKleur: #ffeb81; 
-}
 
 button {
   color: black;
@@ -55,6 +38,46 @@ section:nth-of-type(1) button{
   background-color: var(--background-color3);
   color: var(--main-color);
   }   
+
+
+  section:nth-of-type(1) button::after,
+  section:nth-of-type(1) button::before {
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50% / 50% ;
+    background-color:var(--background-color3);
+    position: absolute;
+    z-index: -1;
+  }
+  
+  section:nth-of-type(1) button::before {
+    content: "";
+    --size: 30px;
+    right: 35px;
+    top: 30px;
+  }
+  
+  section:nth-of-type(1) button::after {
+    content: "";
+    --size: 20px;
+    left: 10px;
+    top: 50px;
+  }
+  
+  section:nth-of-type(1) button:hover {
+    transform: scale(1.1);
+  }
+  
+  
+  section:nth-of-type(1) button:hover::before {
+    animation: bubbels .6s ease-out;
+    box-shadow:  20px -5px 0px -2px var(--background-color3), 40px 5px 0px -10px var(--background-color3), -20px -10px 0px -10px var(--background-color3);
+  }
+  
+  section:nth-of-type(1) button:hover::after {
+    animation: bubbels1 .6s ease-out;
+    box-shadow: 20px -10px 0px 1px var(--background-color3), 40px -10px 0px -4px var(--background-color3), -10px -20px 0px -2px var(--background-color3);
+  }
 
 section:nth-of-type(1) p{
   color: var(--main-color);
